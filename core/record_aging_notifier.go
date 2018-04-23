@@ -12,19 +12,19 @@ import (
 
 var (
 	// Seller Notification Intervals
-	soldItemDisputeTimeout_firstNotificationInterval = time.Duration(45*24) * time.Hour
+	soldItemDisputeTimeout_firstNotificationInterval = time.Duration(20) * time.Minute
 
 	// Buyer Notitification Intervals
-	boughtItemDisputeTimeout_firstNotificationInterval  = time.Duration(15*24) * time.Hour
-	boughtItenDisputeTimeout_secondNotificationInterval = time.Duration(40*24) * time.Hour
-	boughtItenDisputeTimeout_thirdNotificationInterval  = time.Duration(44*24) * time.Hour
-	boughtItenDisputeTimeout_fourthNotificationInterval = time.Duration(45*24) * time.Hour
+	boughtItemDisputeTimeout_firstNotificationInterval  = time.Duration(5) * time.Minute
+	boughtItenDisputeTimeout_secondNotificationInterval = time.Duration(10) * time.Minute
+	boughtItenDisputeTimeout_thirdNotificationInterval  = time.Duration(15) * time.Minute
+	boughtItenDisputeTimeout_fourthNotificationInterval = time.Duration(20) * time.Minute
 
 	// Moderator Notification Intervals
-	moderatorDisputeTimeout_firstNotificationInterval  = time.Duration(15*24) * time.Hour
-	moderatorDisputeTimeout_secondNotificationInterval = time.Duration(30*24) * time.Hour
-	moderatorDisputeTimeout_thirdNotificationInterval  = time.Duration(44*24) * time.Hour
-	moderatorDisputeTimeout_fourthNotificationInterval = time.Duration(45*24) * time.Hour
+	moderatorDisputeTimeout_firstNotificationInterval  = time.Duration(5) * time.Minute
+	moderatorDisputeTimeout_secondNotificationInterval = time.Duration(10) * time.Minute
+	moderatorDisputeTimeout_thirdNotificationInterval  = time.Duration(15) * time.Minute
+	moderatorDisputeTimeout_fourthNotificationInterval = time.Duration(20) * time.Minute
 )
 
 type recordAgingNotifier struct {
